@@ -1,0 +1,15 @@
+[package]
+name = "myvault"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+aes-gcm = "0.11.0-rc.2"
+postcard = "1.1.1"
+serde = "1.0.215"
+rustyline = "~16.0"
+clap = { version = "~4.5", features = ["derive"] }
+
+argon2 = "0.5.3"
+chrono = "0.4.39"
+
