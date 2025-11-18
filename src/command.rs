@@ -82,7 +82,6 @@ pub fn get_command() -> Result<OpCli, ReadlineError> {
         match readline {
             Ok(line) => {
                 let args: Vec<&str> = line.split_whitespace().collect();
-                println!("command: `{}`", line);
                 let mut cmd = Vec::new();
                 cmd.push("dummy");
                 cmd.extend(args);
